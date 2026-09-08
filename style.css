@@ -1,0 +1,178 @@
+body {
+  background-color: #f8f2e8;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  background: #fff0f6;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  background: #f7c8d8;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f4b6cc;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.nav-button {
+  background:  #ffe4ec;
+  width: 200px;        
+  height: 45px;        
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  color:  #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-title {
+  background: #ffe4ec;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background: #d7f5d1;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    top: -100px;
+    animation: fall 25s linear infinite;
+}
+
+.confetti-piece img {
+    width: 100px;
+    height: auto;
+    animation: rock 4s ease-in-out infinite alternate;
+}
+
+.confetti-piece:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.confetti-piece:nth-child(2) {
+    left: 35%;
+    animation-delay: 5s;
+}
+
+.confetti-piece:nth-child(3) {
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.confetti-piece:nth-child(4) {
+    left: 85%;
+    animation-delay: 7s;
+}
+
+.confetti-piece:nth-child(5) {
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.confetti-piece:nth-child(6) {
+    left: 50%;
+    animation-delay: 8s;
+}
+
+.confetti-piece:nth-child(7) {
+    left: 75%;
+    animation-delay: 3s;
+}
+
+.confetti-piece:nth-child(1) img {
+    animation-duration: 4s;
+}
+
+.confetti-piece:nth-child(2) img {
+    animation-duration: 6s;
+}
+
+.confetti-piece:nth-child(3) img {
+    animation-duration: 3.5s;
+}
+
+.confetti-piece:nth-child(4) img {
+    animation-duration: 5s;
+}
+
+.confetti-piece:nth-child(5) img {
+    animation-duration: 4.5s;
+}
+
+.confetti-piece:nth-child(6) img {
+    animation-duration: 6s;
+}
+
+.confetti-piece:nth-child(7) img {
+    animation-duration: 3.5s;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes rock {
+    from {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
